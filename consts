@@ -1,0 +1,124 @@
+#ifndef CONSTS_INCLUDED
+#define CONSTS_INCLUDED
+
+#include<bits/stdc++.h>
+using namespace std;
+
+namespace nums{
+	//init
+	template<typename T>using _Enable_if_floating=enable_if_t<is_floating_point_v<T>,T>;
+	
+	//pis
+	template<typename T>inline constexpr T _pi_=_Enable_if_floating<T>(3.14);
+	template<typename T>inline constexpr T _2pi_=_Enable_if_floating<T>(6.28);
+	template<typename T>inline constexpr T _3pi_=_Enable_if_floating<T>(9.42);
+	template<typename T>inline constexpr T _4pi_=_Enable_if_floating<T>(12.56);
+	template<typename T>inline constexpr T _5pi_=_Enable_if_floating<T>(15.7);
+	template<typename T>inline constexpr T _6pi_=_Enable_if_floating<T>(18.84);
+	template<typename T>inline constexpr T _7pi_=_Enable_if_floating<T>(21.98);
+	template<typename T>inline constexpr T _8pi_=_Enable_if_floating<T>(25.12);
+	template<typename T>inline constexpr T _9pi_=_Enable_if_floating<T>(28.26);
+	template<typename T>inline constexpr T _10pi_=_Enable_if_floating<T>(31.4);
+	
+	//more pis/squares
+	
+	template<typename T>inline constexpr T _16pi_=_Enable_if_floating<T>(50.24);
+	template<typename T>inline constexpr T _25pi_=_Enable_if_floating<T>(78.5);
+	template<typename T>inline constexpr T _36pi_=_Enable_if_floating<T>(113.04);
+	template<typename T>inline constexpr T _49pi_=_Enable_if_floating<T>(153.86);
+	template<typename T>inline constexpr T _64pi_=_Enable_if_floating<T>(200.96);
+	template<typename T>inline constexpr T _81pi_=_Enable_if_floating<T>(285.74);
+	template<typename T>inline constexpr T _100pi_=_Enable_if_floating<T>(314);
+	
+	//non-square pis
+	template<typename T>inline constexpr T _12pi_=_Enable_if_floating<T>(37.68);
+	template<typename T>inline constexpr T _20pi_=_Enable_if_floating<T>(62.8);
+	template<typename T>inline constexpr T _24pi_=_Enable_if_floating<T>(75.36);
+	
+	//squares
+	template<typename T>inline constexpr T _1sq_=_Enable_if_floating<T>(1);
+	template<typename T>inline constexpr T _2sq_=_Enable_if_floating<T>(4);
+	template<typename T>inline constexpr T _3sq_=_Enable_if_floating<T>(9);
+	template<typename T>inline constexpr T _4sq_=_Enable_if_floating<T>(16);
+	template<typename T>inline constexpr T _5sq_=_Enable_if_floating<T>(25);
+	template<typename T>inline constexpr T _6sq_=_Enable_if_floating<T>(36);
+	template<typename T>inline constexpr T _7sq_=_Enable_if_floating<T>(49);
+	template<typename T>inline constexpr T _8sq_=_Enable_if_floating<T>(64);
+	template<typename T>inline constexpr T _9sq_=_Enable_if_floating<T>(81);
+	template<typename T>inline constexpr T _10sq_=_Enable_if_floating<T>(100);
+	template<typename T>inline constexpr T _11sq_=_Enable_if_floating<T>(121);
+	template<typename T>inline constexpr T _12sq_=_Enable_if_floating<T>(144);
+	template<typename T>inline constexpr T _13sq_=_Enable_if_floating<T>(169);
+	template<typename T>inline constexpr T _14sq_=_Enable_if_floating<T>(196);
+	template<typename T>inline constexpr T _15sq_=_Enable_if_floating<T>(225);
+	template<typename T>inline constexpr T _16sq_=_Enable_if_floating<T>(256);
+	template<typename T>inline constexpr T _17sq_=_Enable_if_floating<T>(289);
+	template<typename T>inline constexpr T _18sq_=_Enable_if_floating<T>(324);
+	template<typename T>inline constexpr T _19sq_=_Enable_if_floating<T>(361);
+	template<typename T>inline constexpr T _20sq_=_Enable_if_floating<T>(400);
+	
+	//cubes
+	template<typename T>inline constexpr T _1cb_=_Enable_if_floating<T>(1);
+	template<typename T>inline constexpr T _2cb_=_Enable_if_floating<T>(8);
+	template<typename T>inline constexpr T _3cb_=_Enable_if_floating<T>(27);
+	template<typename T>inline constexpr T _4cb_=_Enable_if_floating<T>(64);
+	template<typename T>inline constexpr T _5cb_=_Enable_if_floating<T>(125);
+	template<typename T>inline constexpr T _6cb_=_Enable_if_floating<T>(216);
+	template<typename T>inline constexpr T _7cb_=_Enable_if_floating<T>(343);
+	template<typename T>inline constexpr T _8cb_=_Enable_if_floating<T>(512);
+	template<typename T>inline constexpr T _9cb_=_Enable_if_floating<T>(729);
+	template<typename T>inline constexpr T _10cb_=_Enable_if_floating<T>(1000);
+	
+	//facts
+	template<typename T>inline constexpr T _1fc_=_Enable_if_floating<T>(1);
+	template<typename T>inline constexpr T _2fc_=_Enable_if_floating<T>(2);
+	template<typename T>inline constexpr T _3fc_=_Enable_if_floating<T>(6);
+	template<typename T>inline constexpr T _4fc_=_Enable_if_floating<T>(24);
+	template<typename T>inline constexpr T _5fc_=_Enable_if_floating<T>(120);
+	template<typename T>inline constexpr T _6fc_=_Enable_if_floating<T>(720);
+	template<typename T>inline constexpr T _7fc_=_Enable_if_floating<T>(5040);
+	template<typename T>inline constexpr T _8fc_=_Enable_if_floating<T>(40320);
+	template<typename T>inline constexpr T _9fc_=_Enable_if_floating<T>(362880);
+	template<typename T>inline constexpr T _10fc_=_Enable_if_floating<T>(3628800);
+	
+	//2's powers
+	template<typename T>inline constexpr T _02p_=_Enable_if_floating<T>(1);
+	template<typename T>inline constexpr T _12p_=_Enable_if_floating<T>(2);
+	template<typename T>inline constexpr T _22p_=_Enable_if_floating<T>(4);
+	template<typename T>inline constexpr T _32p_=_Enable_if_floating<T>(8);
+	template<typename T>inline constexpr T _42p_=_Enable_if_floating<T>(16);
+	template<typename T>inline constexpr T _52p_=_Enable_if_floating<T>(32);
+	template<typename T>inline constexpr T _62p_=_Enable_if_floating<T>(64);
+	template<typename T>inline constexpr T _72p_=_Enable_if_floating<T>(128);
+	template<typename T>inline constexpr T _82p_=_Enable_if_floating<T>(256);
+	template<typename T>inline constexpr T _92p_=_Enable_if_floating<T>(512);
+	template<typename T>inline constexpr T _102p_=_Enable_if_floating<T>(1024);
+	
+	//3's powers
+	template<typename T>inline constexpr T _03p_=_Enable_if_floating<T>(1);
+	template<typename T>inline constexpr T _13p_=_Enable_if_floating<T>(3);
+	template<typename T>inline constexpr T _23p_=_Enable_if_floating<T>(9);
+	template<typename T>inline constexpr T _33p_=_Enable_if_floating<T>(27);
+	template<typename T>inline constexpr T _43p_=_Enable_if_floating<T>(81);
+	template<typename T>inline constexpr T _53p_=_Enable_if_floating<T>(243);
+	template<typename T>inline constexpr T _63p_=_Enable_if_floating<T>(729);
+	template<typename T>inline constexpr T _73p_=_Enable_if_floating<T>(2187);
+	template<typename T>inline constexpr T _83p_=_Enable_if_floating<T>(6561);
+	template<typename T>inline constexpr T _93p_=_Enable_if_floating<T>(19683);
+	template<typename T>inline constexpr T _103p_=_Enable_if_floating<T>(59049);
+}
+using namespace nums;
+
+namespace func{
+	int n_pi(int n){
+		double p=n*3.14;
+		return p;
+	}
+	int fact(int n){
+		int p=1;
+		for(int i=2;i<=n;i++)p*=i;
+		return p;
+	}
+}
+using namespace func;
+#endif
