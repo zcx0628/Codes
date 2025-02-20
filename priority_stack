@@ -1,0 +1,55 @@
+#ifndef PRIORITY_STACK_INCLUDED
+#define PRIORITY_STACK_INCLUDED
+
+#include<bits/stdc++.h>
+using namespace std;
+
+template<typename T>class priority_stack{
+	vector<T> bas;
+	int size_=0;
+public:
+	void push(T n){
+		bas.push_back(n);
+		size_++;
+		sort(bas.begin(),bas.end());
+	}
+	void pop(){
+		if(size_!=0){
+			bas.pop_back();
+			size_--;
+		}else{
+			throw runtime_error("Stack empty");
+		}
+	}
+	void multi_push(int n,T m){
+		for(int i=0;i<n;i++){
+			bas.push_back(m);
+			size_++;
+		}
+		sort(bas.begin(),bas.end());
+	}
+	void fast_pop(int n){
+		if(n>size_){
+			bas.clear();
+			size_=0;
+			throw runtime_error("Stack elements not enough for popping");
+		}else{
+			for(int i=0;i<n;i++){
+				bas.pop_back();
+				size_--;
+			}
+		}
+	}
+	int size(){
+		return size_;
+	}
+	T top(){
+		return bas[0];
+	}
+	T bottom(){
+		return bas[size_-1];
+	}
+	
+};
+
+#endif
