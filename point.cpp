@@ -1,5 +1,6 @@
 #ifndef POINT_H_INCLUDED
 #define POINT_H_INCLUDED
+
 #include<bits/stdc++.h>
 using namespace std;
 template<typename T>
@@ -86,4 +87,5 @@ istream& operator >>(istream &in,const point<T> &a){
 	in>>a.a>>a.b;
 	return in;
 }
+
 #endif
